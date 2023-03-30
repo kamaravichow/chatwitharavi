@@ -1,0 +1,12 @@
+{
+	"version": 2,
+	"public": false,
+	"builds": [{ "src": "main.py", "use": "@vercel/python" }],
+	"routes": [
+		{ "src": "/", "dest": "main.py" },
+		{ "src": "/chat", "dest": "main.py" },
+		{ "src": "/api/current_user", "dest": "main.py" },
+    { "src": "/api/register", "dest": "main.py" },
+    { "src": "/api/chat", "dest": "main.py" }
+	]
+}
